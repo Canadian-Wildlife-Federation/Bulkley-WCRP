@@ -1,0 +1,73 @@
+Traceback (most recent call last):
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\jupyter_cache\executors\utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\nbclient\client.py", line 1269, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\nbclient\util.py", line 85, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\nbclient\util.py", line 60, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\asyncio\base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\nbclient\client.py", line 708, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\nbclient\client.py", line 1025, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\nbclient\client.py", line 919, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from docx import Document
+from myst_nb import glue
+from IPython.display import display, Markdown, display_markdown
+from functions import head2txt
+
+document = Document('MASTER_Horsefly_WCRP.docx')
+
+
+par1 = head2txt(document,'Acknowledgements', 3)[0]
+par2 = head2txt(document,'Acknowledgements', 3)[1]
+par3 = head2txt(document,'Acknowledgements', 3)[2]
+
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mPackageNotFoundError[0m                      Traceback (most recent call last)
+[1;32m~\AppData\Local\Temp\ipykernel_8228\418650920.py[0m in [0;36m<module>[1;34m[0m
+[0;32m      4[0m [1;32mfrom[0m [0mfunctions[0m [1;32mimport[0m [0mhead2txt[0m[1;33m[0m[1;33m[0m[0m
+[0;32m      5[0m [1;33m[0m[0m
+[1;32m----> 6[1;33m [0mdocument[0m [1;33m=[0m [0mDocument[0m[1;33m([0m[1;34m'MASTER_Horsefly_WCRP.docx'[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m      7[0m [1;33m[0m[0m
+[0;32m      8[0m [1;33m[0m[0m
+
+[1;32mc:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\docx\api.py[0m in [0;36mDocument[1;34m(docx)[0m
+[0;32m     23[0m     """
+[0;32m     24[0m     [0mdocx[0m [1;33m=[0m [0m_default_docx_path[0m[1;33m([0m[1;33m)[0m [1;32mif[0m [0mdocx[0m [1;32mis[0m [1;32mNone[0m [1;32melse[0m [0mdocx[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 25[1;33m     [0mdocument_part[0m [1;33m=[0m [0mPackage[0m[1;33m.[0m[0mopen[0m[1;33m([0m[0mdocx[0m[1;33m)[0m[1;33m.[0m[0mmain_document_part[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     26[0m     [1;32mif[0m [0mdocument_part[0m[1;33m.[0m[0mcontent_type[0m [1;33m!=[0m [0mCT[0m[1;33m.[0m[0mWML_DOCUMENT_MAIN[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     27[0m         [0mtmpl[0m [1;33m=[0m [1;34m"file '%s' is not a Word file, content type is '%s'"[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32mc:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\docx\opc\package.py[0m in [0;36mopen[1;34m(cls, pkg_file)[0m
+[0;32m    126[0m         [1;33m*[0m[0mpkg_file[0m[1;33m*[0m[1;33m.[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    127[0m         """
+[1;32m--> 128[1;33m         [0mpkg_reader[0m [1;33m=[0m [0mPackageReader[0m[1;33m.[0m[0mfrom_file[0m[1;33m([0m[0mpkg_file[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m    129[0m         [0mpackage[0m [1;33m=[0m [0mcls[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    130[0m         [0mUnmarshaller[0m[1;33m.[0m[0munmarshal[0m[1;33m([0m[0mpkg_reader[0m[1;33m,[0m [0mpackage[0m[1;33m,[0m [0mPartFactory[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32mc:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\docx\opc\pkgreader.py[0m in [0;36mfrom_file[1;34m(pkg_file)[0m
+[0;32m     30[0m         [0mReturn[0m [0ma[0m [1;33m|[0m[0mPackageReader[0m[1;33m|[0m [0minstance[0m [0mloaded[0m [1;32mwith[0m [0mcontents[0m [0mof[0m [1;33m*[0m[0mpkg_file[0m[1;33m*[0m[1;33m.[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     31[0m         """
+[1;32m---> 32[1;33m         [0mphys_reader[0m [1;33m=[0m [0mPhysPkgReader[0m[1;33m([0m[0mpkg_file[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     33[0m         [0mcontent_types[0m [1;33m=[0m [0m_ContentTypeMap[0m[1;33m.[0m[0mfrom_xml[0m[1;33m([0m[0mphys_reader[0m[1;33m.[0m[0mcontent_types_xml[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     34[0m         [0mpkg_srels[0m [1;33m=[0m [0mPackageReader[0m[1;33m.[0m[0m_srels_for[0m[1;33m([0m[0mphys_reader[0m[1;33m,[0m [0mPACKAGE_URI[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32mc:\Users\TMillaKoch\Anaconda3\envs\test\lib\site-packages\docx\opc\phys_pkg.py[0m in [0;36m__new__[1;34m(cls, pkg_file)[0m
+[0;32m     29[0m             [1;32melse[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     30[0m                 raise PackageNotFoundError(
+[1;32m---> 31[1;33m                     [1;34m"Package not found at '%s'"[0m [1;33m%[0m [0mpkg_file[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     32[0m                 )
+[0;32m     33[0m         [1;32melse[0m[1;33m:[0m  [1;31m# assume it's a stream and pass it to Zip reader to sort out[0m[1;33m[0m[1;33m[0m[0m
+
+[1;31mPackageNotFoundError[0m: Package not found at 'MASTER_Horsefly_WCRP.docx'
+PackageNotFoundError: Package not found at 'MASTER_Horsefly_WCRP.docx'
+

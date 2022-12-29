@@ -1,0 +1,1 @@
+The primary conservation outcome of the WCRP will be the remediation of barriers to connectivity in the Horsefly River watershed. To achieve Goal 1 in this plan, it is necessary to prioritize and identify a suite of barriers that, if remediated, will provide access to a minimum of {glue:text}`gain` km of spawning or rearing habitat ({numref}`table16`):
