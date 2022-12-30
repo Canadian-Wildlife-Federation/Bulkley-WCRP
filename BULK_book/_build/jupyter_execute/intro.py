@@ -39,7 +39,7 @@ par3 = head2txt(document,'Acknowledgements', 3)[2]
 # 
 # Mazany-Wright, N., S. M. Norris, J. Noseworthy, B. Rebellato, S. Sra, and N. W. R. Lapointe. 2022. Bulkley River Watershed Connectivity Remediation Plan: 2021- 2031. Canadian Wildlife Federation. Ottawa, Ontario, Canada.  
 # 
-# [Download full PDF here!](https://github.com/Canadian-Wildlife-Federation/Horsefly-WCRP/raw/master/Tutorials/Jupyter_Book/mynewbook/_build/pdf/book.pdf)
+# [Download full PDF here!](https://github.com/Canadian-Wildlife-Federation/Bulkley-WCRP/blob/main/BULK_book/_build/pdf/book.pdf)
 # 
 #  
 # 
