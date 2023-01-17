@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Plan Purpose, Apporach and Scope &#8212; Bulkley River WCRP</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Bulkley River WCRP</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../notebooks/intro.html">
+                    Bulkley River Watershed (Laxyip | Wedzin Kwah) Connectivity Remediation Plan: 2021 - 2031
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks/Planning.html">
+   Plan Purpose, Apporach and Scope
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks/EcoAttributes.html">
+   Connectivity Status Assessment and Action Plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks/references.html">
+   References
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks/AppendixA.html">
+   Appendix A
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks/AppendixB.html">
+   Appendix B
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/Canadian-Wildlife-Federation/Bulkley-WCRP.git"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/Canadian-Wildlife-Federation/Bulkley-WCRP.git/issues/new?title=Issue%20on%20page%20%2Fcontent/planning-md.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/content/planning-md.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Plan Purpose, Apporach and Scope
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vision-statement">
+   Vision Statement
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#planning-team">
+   Planning Team
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#key-actors">
+   Key Actors
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-scope">
+   Project Scope
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#target-species">
+   Target species
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anadromous-salmonids">
+     Anadromous Salmonids
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chinook-salmon-yaaa-ggis-oncorhynchus-tshawytscha">
+     Chinook Salmon | Ya’aa | Ggïs | Oncorhynchus tshawytscha
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coho-salmon-eek-deedzex-oncorhynchus-kisutch">
+     Coho Salmon | Eek | Deedzex | Oncorhynchus kisutch
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sockeye-salmon-misoo-taalook-oncorhynchus-nerka">
+     Sockeye Salmon | Mi’soo | Taalook | Oncorhynchus nerka
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steelhead-milit-tesdli-oncorhynchus-mykiss">
+     Steelhead | Milit | Tësdlï | Oncorhynchus mykiss
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Plan Purpose, Apporach and Scope</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Plan Purpose, Apporach and Scope
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vision-statement">
+   Vision Statement
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#planning-team">
+   Planning Team
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#key-actors">
+   Key Actors
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-scope">
+   Project Scope
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#target-species">
+   Target species
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#anadromous-salmonids">
+     Anadromous Salmonids
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chinook-salmon-yaaa-ggis-oncorhynchus-tshawytscha">
+     Chinook Salmon | Ya’aa | Ggïs | Oncorhynchus tshawytscha
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coho-salmon-eek-deedzex-oncorhynchus-kisutch">
+     Coho Salmon | Eek | Deedzex | Oncorhynchus kisutch
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sockeye-salmon-misoo-taalook-oncorhynchus-nerka">
+     Sockeye Salmon | Mi’soo | Taalook | Oncorhynchus nerka
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steelhead-milit-tesdli-oncorhynchus-mykiss">
+     Steelhead | Milit | Tësdlï | Oncorhynchus mykiss
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="plan-purpose-apporach-and-scope">
+<h1>Plan Purpose, Apporach and Scope<a class="headerlink" href="#plan-purpose-apporach-and-scope" title="Permalink to this headline">#</a></h1>
+<p>The following Watershed Connectivity Remediation Plan (WCRP) represents the culmination of a one-year collaborative planning effort for the Bulkley River watershed (excluding the Morice River, see Project Scope), the overall aim of which is to clarify and reduce the threat of aquatic barriers to anadromous salmonids and the livelihoods that they support, including the values and laws of First Nations, as well their continued sustenance, cultural, and ceremonial needs both now and into the future. This 10-year plan was developed to identify priority actions that the Bulkley River WCRP planning team (see Planning Team for a list of team members) will undertake between 2021-2031 to conserve and restore fish passage in the watershed through strategies aimed at barrier remediation, barrier prevention, and strengthening Indigenous connections to land and water.</p>
+<p>WCRPs are long-term, actionable plans that blend local stakeholder and rightsholder knowledge with innovative GIS analyses to gain a shared understanding of where remediation efforts will have the greatest benefit for anadromous salmonids. The planning process is inspired by the <a class="reference external" href="https://cmp-openstandards.org/wp-content/uploads/2020/07/CMP-Open-Standards-for-the-Practice-of-Conservation-v4.0.pdf">Conservation Standards</a> (v.4.0), which is a conservation planning framework that allows planning teams to systematically identify, implement, and monitor strategies to apply the most effective solutions to high priority conservation problems. There is a rich history of connectivity and fish passage planning and remediation work in the Bulkley River watershed that this WCRP builds upon, including the work undertaken by the BC Fish Passage Technical Working Group, the Skeena Fisheries Commission, the Office of the Wet’suwet’en, the Wet’suwet’en First Nation, and the Society for Ecosystem Restoration in Northern British Columbia (SERNbc), among others (Wilson and Rabnett 2007, McCarthy and Fernando 2015, Smith 2018, Casselman and Stanley 2010, Irvine 2018). The Canadian Wildlife Federation will continue to engage and coordinate with local partners and existing initiatives, in part through the Skeena Environmental Stewardship Initiative. SERNbc is also currently undertaking <a class="reference external" href="https://www.newgraphenvironment.com/fish_passage_bulkley_2020_reporting/Bulkley.pdf">fish passage work</a> in the Bulkley River watershed, with some overlap and some differences in scope compared to the work and processes described in this WCRP. The SERNbc project relies on expert knowledge and field assessments in both the Bulkley and Morice watersheds to improve passage for all fish, including fluvial and resident species, and focuses on stream crossings that act as barriers (Irvine 2021). This WCRP focuses specifically on improving connectivity for anadromous salmonid species and uses consensus-based planning exercises and spatial model implementation to develop watershed-scale status assessments, goal setting, and prioritization for multiple barrier types. SERNbc and the WCRP planning team are currently collaborating on the development of the <a class="reference external" href="https://github.com/smnorris/bcfishpass">bcfishpass</a> connectivity model and will continue to work together to promote coordination and collaboration between the two initiatives moving forward.</p>
+<p>The planning team compiled existing barrier location and assessment data, habitat data, and previously identified priorities, and combined this with local and Indigenous knowledge to create a strategic watershed-scale plan to improve connectivity. To expand on this work, the Bulkley River WCRP planning team applied the WCRP planning framework to define the “thematic” scope of freshwater connectivity and refine the “geographic” scope to identify those portions of the watershed where barrier prioritization will be conducted, and subsequent remediation efforts will take place. Additionally, the team selected target fish species, assessed their current connectivity status in the watershed, defined concrete goals for gains in connectivity, and developed a priority list of barriers for remediation to achieve those goals. During the 2021 field season, 28 barrier assessments and 21 habitat confirmations were completed. Seventeen barriers were added to the intermediate barrier list based on 2021 field assessments, and an additional 17 crossings were removed from the list, due to being passable, not existing, or having low quality habitat (<a class="reference internal" href="../notebooks/AppendixB.html#table16"><span class="std std-numref">Fig. 19</span></a>). The preliminary barriers list was further divided this year into an “intermediate barriers” list (<a class="reference internal" href="../notebooks/AppendixB.html#table16"><span class="std std-numref">Fig. 19</span></a>), which includes barriers that require further assessment, and a “priority barriers” list (<a class="reference internal" href="../notebooks/AppendixB.html#table17"><span class="std std-numref">Fig. 20</span></a>), which includes barriers that are actively being pursued for design and remediation. While the current version of this plan is based on the best-available information at the time of publishing, WCRPs are intended to be “living plans” that are updated regularly as new information becomes available, or if local priorities and contexts change. As such, this document should be interpreted as a current “snap-shot” in time, and future iterations of this WCRP will build upon the material presented in this plan to continuously improve aquatic barrier remediation for migratory fish in the Bulkley River watershed. For more information on how WCRPs are developed, see <span id="id1">[]</span>.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="vision-statement">
+<h1>Vision Statement<a class="headerlink" href="#vision-statement" title="Permalink to this headline">#</a></h1>
+<p><em>Healthy, well-connected streams and rivers within the Bulkley River watershed support thriving populations of migratory and resident fish. In turn, these fish provide the continued sustenance, cultural, and ceremonial needs of the Wet’suwet’en and Gitxsan peoples, as they have since time immemorial. First Nations, residents, and visitors to the watershed work together for environmental stewardship to clarify, implement, and assess the effectiveness of actions to mitigate the negative effects of aquatic barriers, improving the resiliency of streams and rivers for the benefit and appreciation of all.</em></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="planning-team">
+<h1>Planning Team<a class="headerlink" href="#planning-team" title="Permalink to this headline">#</a></h1>
+<!-- ```{glue:figure} Table1
+:name: "table1"
+
+*Bulkley River watershed WCRP planning team members. Planning team members contributed to the development of this plan by participating in a series of workshops and document and data review. The plan was generated based on the input and feedback of the local groups and organizations list in this table.*
+``` -->
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="key-actors">
+<h1>Key Actors<a class="headerlink" href="#key-actors" title="Permalink to this headline">#</a></h1>
+<!-- ```{glue:figure} Table2
+:name: "table2"
+
+*Additional Key Actors in the Bulkley River watershed. Key Actors are the individuals, groups, and/or organizations, outside of the planning team, with influence and relevant experience in the watershed, whose engagement will be critical for the successful implementation of this WCRP.* 
+``` -->
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="project-scope">
+<h1>Project Scope<a class="headerlink" href="#project-scope" title="Permalink to this headline">#</a></h1>
+<p>Connectivity is a critical component of freshwater ecosystems that encompasses a variety of factors related to ecosystem structure and function, such as the ability of aquatic organisms to disperse and/or migrate, the transportation of energy and matter (e.g., nutrient cycling and sediment flows), and temperature regulation <span id="id2">[]</span>. Though each of these factors are important when considering the health of a watershed, for the purposes of this WCRP the term “connectivity” is defined as the degree to which aquatic organisms can disperse and/or migrate freely through freshwater systems. Within this context, connectivity is primarily constrained by physical barriers including anthropogenic infrastructure such as dams, weirs, and stream crossings, and natural features such as waterfalls and debris flows. This plan is intended to focus on the direct remediation and prevention of localized, physical barriers instead of the broad land-use patterns that are causing chronic connectivity issues in the watershed. The planning team decided that the primary focus of this WCRP is addressing barriers to longitudinal connectivity (i.e., along the upstream-downstream plane) due to the magnitude of the threat posed by linear development (i.e., road and rail lines) in the watershed.</p>
+<!-- ```{figure} figure1.png
+---
+height: 400px
+width: 1000px
+name: fig1
+---
+*The primary geographic scope — the Bulkley River watershed, excluding the Morice River drainage.*
+``` -->
+<p>The primary geographic scope of this WCRP is the Bulkley River watershed, located in the mid-eastern portion of the Skeena River drainage basin in northwestern British Columbia (<a class="reference internal" href="../notebooks/Planning.html#fig1"><span class="std std-numref">Fig. 3</span></a>). The scope constitutes the Bulkley River “watershed group” as defined by the <a class="reference external" href="https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-watershed-groups">British Columbia Freshwater Atlas</a> (FWA), which excludes the Morice River drainage area due to an effort made to standardize spatial scales of the watershed groups. A consistent spatial framework was necessary to undertake a watershed-selection process at the provincial scale to identify target watersheds to improve connectivity for salmonids. The Bulkley River watershed was identified by the BC Fish Passage Restoration Initiative as one of four target watersheds for WCRP development <span id="id3">[]</span>. The Bulkley River watershed has a drainage area of 776,200 ha, spanning from Bulkley Lake in the southeast to the confluence with the Skeena River in the northwest. The watershed is generally divided into the “lower” Bulkley River and the “upper” Bulkley River by the confluence with the Morice River near the town of Houston. Culturally and economically important populations of Chinook Salmon (Oncorhynchus tshawytscha), Coho Salmon (Oncorhynchus kisutch), Sockeye Salmon (Oncorhynchus nerka), and Steelhead (Oncorhynchus mykiss) are all found in the watershed, which historically supported Indigenous sustenance and trading economies  (<a class="reference internal" href="../notebooks/Planning.html#table3"><span class="std std-numref">Fig. 4</span></a>; Irvine 2021).</p>
+<!-- ```{glue:figure} Table3
+:name: "table3"
+
+*Target fish species in the Bulkley River watershed. The Gitxsanimax, Witsuwit'en, and Western common and scientific species names are provided.*
+``` -->
+<p>The Horsefly River watershed comprises parts of Secwepemcúl’ecw, the traditional territory of the Northern Secwepemc te Qelmucw (NStQ), represented by the Northern Shuswap Tribal Council and four member communities or autonomous nations:</p>
+<ul class="simple">
+<li><p><strong>Gitxsan</strong> peoples– the traditional Gitxsan Laxyip spans the northern portion of the watershed, including the Suskwa River, and is governed by a hereditary system of 60 Wilps or House Groups who are represented by Simgigyat (hereditary chiefs). Each Wilp has jurisdiction over several Anaat, or fishing sites. The Wilp groups that have territory coinciding with the Bulkley River watershed include Djogaslee, Gyet’m Galdo’o, Luutkudziiwas, Axtii Tsex, Yagosip, and Spookw (G. Sebastian pers. comm.). The Gitxsan steward the land and waters based on Ayookw (Gitxsan law) and Adaakw (oral histories; Gitxsan 2019, Irvine 2021). It is necessary to receive permission from the individual Wilp chief for any work to occur on their territory.</p></li>
+<li><p><strong>Wet’suwet’en</strong> peoples– the Wedzin Kwah (Bulkley River watershed) is part of the larger Wet’suwet’en traditional territory. The hereditary territory is governed by a system made up of five clans – Gilseyhu (Big Frog), Laksilyu (Small Frog), Tsayu (Beaver), Gitdumden (Wolf/Bear) and Laksamshu (Fireweed) – each of which comprises multiple Yikhs (House Groups) represented by hereditary chiefs. The Wet’suwet’en steward the land based on Inuk Nu’at’en (Wet’suwet’en law), and the principle of Yintahk, meaning everything is connected to the land (Office of the Wet’suwet’en 2013, Irvine 2021). It is necessary to receive permission from the appropriate bands (Witset First Nation or Wet’suwet’en first Nation, Skin Tyee, Nee Tahi Buhn, or Burns Lake Band), nation representatives (Office of the Wet’suwet’en), and the individual Yikh chiefs for any work to occur on their territory.</p></li>
+</ul>
+<p>The geographic scope of this WCRP was further refined by identifying “potentially accessible” stream segments, which are defined as streams that target species should be able to access in the absence of anthropogenic barriers (<a class="reference internal" href="../notebooks/Planning.html#fig1"><span class="std std-numref">Fig. 3</span></a>). Potentially accessible stream segments were spatially delineated using fish species observation and distribution data, as well as data on “exclusionary points”, which are waterfalls greater than 5 m in height and gradient barriers based on species-specific swimming abilities. These maps were explored by the planning team to incorporate additional local knowledge, ensure accuracy, and finalize the constraints on potentially accessible stream segments. All other stream segments were removed from the scope for further consideration. The “constrained geographic scope” formed the foundation for all subsequent analyses and planning steps, including mapping and modelling useable habitat types, quantifying the current connectivity status, goal setting, and action planning <span id="id4">[]</span>.</p>
+<!-- ```{figure} figure2.png
+---
+height: 400px
+width: 1000px
+name: fig2
+---
+*Potentially accessible stream segments within the Bulkley River watershed. These do not represent useable habitat types, but rather identifies the stream segments within which habitat modelling and barrier mapping and prioritization was undertaken.*
+``` -->
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="target-species">
+<h1>Target species<a class="headerlink" href="#target-species" title="Permalink to this headline">#</a></h1>
+<p>Target species represent the ecologically and culturally important species for which habitat connectivity is being conserved and/or restored in the watershed. In the Bulkley River watershed, the planning team selected Anadromous Salmonids as the target species group, which comprises Chinook Salmon, Coho Salmon, Sockeye Salmon, and Steelhead. Anadromous salmonids also include Pink Salmon (Oncorhynchus gorbuscha) and Chum Salmon (Oncorhynchus keta) as beneficiary species (i.e., species that are not actively targeted through the planning process but will also benefit from connectivity improvements for target anadromous species in the watershed). The selection of these target species was driven primarily by the target species of the primary fund supporting this planning work. The planning team also identified other culturally and ecologically important species within the watershed to consider for inclusion in future iterations of the WCRP, including Pacific Lamprey (Entosphenus tridentatus) and Bull Trout (Salvelinus confluentus).</p>
+<section id="anadromous-salmonids">
+<h2>Anadromous Salmonids<a class="headerlink" href="#anadromous-salmonids" title="Permalink to this headline">#</a></h2>
+<p>Anadromous salmonids are cultural and ecological keystone species that contribute to productive ecosystems by contributing marine-derived nutrients to the watershed and forming an important food source for grizzly bears and other species (Schindler et al. 2003). Salmon have enduring food, social, and ceremonial value for the Gitxsan and Wet’suwet’en peoples and contribute significant economic value for recreational and commercial fisheries. Salmon have sustained the culture and economies of Indigenous peoples in the watershed since time immemorial – providing the primary food source for communities, supporting wide-ranging trade systems, and helping pass knowledge and ceremony to future generations through fishing and fish processing (SSAF 2021, Office of the Wet’suwet’en 2013, Rescan 2012).</p>
+<p>Anadromous salmonid populations in the Bulkley River watershed have declined significantly in recent decades, leading both the Gitxsan and Wet’suwet’en nations to declare harvest moratoriums or fishing bans in their territories (Office of the Wet’suwet’en 2013, Gitxsan Huwilp Government 2019). The stewardship of these resources in their territories are imbued in the spirit and culture of these nations through a symbiotic relationship with these fish species – threats to the fish are threats to the well-being of the Wet’suwet’en and Gitxsan peoples (SSAF 2021). The stewardship of their waters continues through the work of the <a class="reference external" href="http://gitksanwatershed.com/">Gitksan Watershed</a> and the <a class="reference external" href="http://www.wetsuweten.com/departments/fisheries-and-wildlife/">Wet’suwet’en Fisheries Program</a>, as well as collaborative initiatives like the Skeena Environment Stewardship Initiative.</p>
+<p>For the purposes of this WCRP, anadromous salmonid populations are defined using Fisheries and Oceans Canada’s Conservation Units. A Conservation Unit (CU) is a group of wild Pacific salmon sufficiently isolated from other groups that, if extirpated, is very unlikely to recolonize naturally within an acceptable timeframe, such as a human lifetime or a specified number of salmon generations. Conservation Units are not defined for Steelhead, as such there is no assessment information to provide for the Bulkley River watershed population. See Appendix A for maps of modelled anadromous salmonid spawning and rearing habitat in the Bulkley River watershed.</p>
+</section>
+<section id="chinook-salmon-yaaa-ggis-oncorhynchus-tshawytscha">
+<h2>Chinook Salmon | Ya’aa | Ggïs | Oncorhynchus tshawytscha<a class="headerlink" href="#chinook-salmon-yaaa-ggis-oncorhynchus-tshawytscha" title="Permalink to this headline">#</a></h2>
+<!-- ```{glue:figure} Table4
+:name: "table4"
+
+*Chinook Salmon Conservation Units assessments in the Bulkley River watershed. Assessments undertaken by the [Pacific Salmon Foundation](https://www.salmonexplorer.ca/#!/skeena/chinook)(2020).*
+``` -->
+<p>The Middle Skeena – Mainstem Tributaries Chinook Salmon spawn in the mainstem Bulkley River (downstream of the confluence with the Morice River) and in key tributaries, including Telkwa River, Goathorn Creek, Howson Creek, Kathlyn Creek, Suskwa River, Harold Price Creek, and Natlan Creek. The Middle Skeena Chinook Salmon stocks have seen a decline in recent years, particularly over the last three generations of spawners <a class="reference external" href="https://www.salmonexplorer.ca/#%21/skeena/chinook/middle-skeena-mainstem-tributaries&amp;pop=ABUNDANCE_TREND&amp;pop-detail=1">Pacific Salmon Explorer</a>.</p>
+<p>The upper Bulkley River Chinook Salmon (upstream of the confluence with the Morice River) are the first salmon to return in the year, usually early-to-mid June, marking the start of the salmon fishery in the watershed (Office of the Wet’suwet’en 2013). The upper Bulkley River population is known to spawn in the mainstem and tributaries of the Bulkley River, including Buck Creek, Byman Creek, Richfield Creek, Maxan Creek, and Foxy Creek. In some years, low water flows prevent adult Chinook Salmon from migrating past Bulkley Falls. The upper Bulkley Chinook Salmon stocks have been observed to be in decline and are threatened, in part, by habitat degradation, including linear development (e.g., highway, rail, and road infrastructure) that fragments tributaries (Office of the Wet’suwet’en 2013, <a class="reference external" href="https://www.salmonexplorer.ca/#%21/skeena/chinook/middle-skeena-mainstem-tributaries&amp;pop=ABUNDANCE_TREND&amp;pop-detail=1">Pacific Salmon Explorer</a>).</p>
+</section>
+<section id="coho-salmon-eek-deedzex-oncorhynchus-kisutch">
+<h2>Coho Salmon | Eek | Deedzex | Oncorhynchus kisutch<a class="headerlink" href="#coho-salmon-eek-deedzex-oncorhynchus-kisutch" title="Permalink to this headline">#</a></h2>
+<!-- ```{glue:figure} Table5
+:name: "table5"
+
+*Table 5. Coho Salmon Conservation Unit assessment in the Bulkley River Watershed. Assessments undertaken by the  [Pacific Salmon Explorer](https://www.salmonexplorer.ca/#!/skeena/chinook/middle-skeena-mainstem-tributaries&pop=ABUNDANCE_TREND&pop-detail=1)(2020).*
+``` -->
+<p>Coho Salmon are the most widely dispersed anadromous salmonid species in the Bulkley River watershed due to their ability to move into smaller tributaries, including headwater streams. Coho Salmon spawning migration peaks in early-to-mid August, though traditionally the main Coho Salmon fishery occurs later in the season (Office of the Wet’suwet’en 2013). Spawning and rearing of the Middle Skeena population is known to occur within the watershed in the mainstem channels of the Bulkley, Telkwa, and Suskwa Rivers, and key tributaries, including Buck Creek, Aitken Creek, McQuarrie Creek, Byman Creek, Richfield Creek, Ailport Creek, and Maxan Creek. In recent decades, Coho Salmon distribution has often been limited to areas downstream of Bulkley Falls, but in years with sufficient flow, tributaries upstream of the falls are well-used by rearing juveniles (M. Risdale pers. comm.). The Coho Salmon population in the watershed appeared to begin recovering around 1998 but has since declined over the last three generations of spawners (Office of the Wet’suwet’en 2013, PSF 2014). Additionally, since 1989, tens of thousands of Coho Salmon fry have been released into the upper Bulkley River mainstem from the Toboggan Hatchery on Toboggan Creek (Office of the Wet’suwet’en 2013).</p>
+</section>
+<section id="sockeye-salmon-misoo-taalook-oncorhynchus-nerka">
+<h2>Sockeye Salmon | Mi’soo | Taalook | Oncorhynchus nerka<a class="headerlink" href="#sockeye-salmon-misoo-taalook-oncorhynchus-nerka" title="Permalink to this headline">#</a></h2>
+<!-- ```{glue:figure} Table6
+:name: "table6"
+
+*Table 6. Sockeye Salmon Conservation Unit Assessments in the Bulkley River watershed. There were not enough data to support assessments for Sockeye Salmon populations at the time of analysis. Assessments undertaken by the [Pacific salmon Foundation](https://www.salmonexplorer.ca/#!/skeena/sockeye)(2020)*
+``` -->
+<p>Sockeye Salmon have cultural and commercial importance within the watershed, especially for First Nations communities, in part due to their fat content which is optimal for the smoke-drying process. Limitations on the Sockeye Salmon harvest in the watershed have hindered the ability of the Wet’suwet’en and Gitxsan to practice important cultural activities and the associated sharing of oral traditions and histories (SSAF 2021, Office of the Wet’suwet’en 2013). The Sockeye Salmon runs generally follow the spring Chinook Salmon migrations in the Bulkley River system, but Bulkley Falls and flows in some parts of Maxan Creek can limit migration during low-flow years. Data are insufficient for population assessments; however, it is believed that the Bulkley/Maxan populations are at risk of extirpation. There are two Sockeye Salmon populations present in the watershed with distinct life histories – the lake-type and the river-type (Office of the Wet’suwet’en 2013, PSF 2014). Two lake-type Sockeye Salmon sub-populations spawn and rear in and around Bulkley Lake and Maxan Lake, and a third lake-type sub-population was extirpated from Toboggan Lake. River-type Sockeye distribution and habitat use within the Bulkley River watershed is not well documented; however, there are records of Sockeye Salmon river spawners in the mainstem Bulkley River around Richfield Creek, McQuarrie Creek, the Morice River confluence, and the Suskwa River mainstem near Natlan Creek.</p>
+</section>
+<section id="steelhead-milit-tesdli-oncorhynchus-mykiss">
+<h2>Steelhead | Milit | Tësdlï | Oncorhynchus mykiss<a class="headerlink" href="#steelhead-milit-tesdli-oncorhynchus-mykiss" title="Permalink to this headline">#</a></h2>
+<p>Steelhead migrations coincide with the arrival of Coho Salmon in the watershed and are an important traditional food source to augment winter stores (Office of the Wet’suwet’en 2013). Steelhead are known to spawn and rear in the mainstem Bulkley River and important tributaries, including the Telkwa River, Hubert Creek, Buck Creek, McQuarrie Creek, Byman Creek, Richfield Creek, Ailport Creek, Johnny David Creek, and Robert Hatch Creek. In the lower part of the watershed, Steelhead are known to spawn and rear throughout the Suskwa River system, all the way up through Harold Price Creek and Blunt Creek. Local knowledge indicates that Steelhead populations have been declining in recent decades and are currently in poor condition throughout the entire watershed. In response, some stocking enhancement actions have been undertaken in an attempt to increase the population in the watershed (Office of the Wet’suwet’en 2013, Chudyk 1979).</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Canadian Wildlife Federation<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -2,10 +2,10 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: notebooks/intro
 chapters:
-- file: Planning
-- file: EcoAttributes
-- file: references
-- file: AppendixA 
-- file: AppendixB
+- file: notebooks/Planning
+- file: notebooks/EcoAttributes
+- file: notebooks/references
+- file: notebooks/AppendixA 
+- file: notebooks/AppendixB
